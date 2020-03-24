@@ -29,6 +29,9 @@ while True:
     elif player_choice == 's':
         print ('SCISSORS versus')
         print (comp_choice)
+    elif player_choice != 'r' or player_choice != 'p' or player_choice != 's':
+        print('Please Enter a valid choice -__-')
+        continue
     #deciding who wins/won
     if player_choice == 'r' and comp_number == 1:
         print('It is a tie')
